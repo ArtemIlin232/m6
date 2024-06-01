@@ -17,7 +17,7 @@ defineProps({
             <i class="fas fa-desktop"></i>
             <h4>{{ game.platform }}</h4>
         </nav>
-        <button>Подробнее</button>
+        <router-link :to="{ name: 'detail' , params: {id: game.id} }">Подробнее</router-link>
     </div>
 </template>
 <style scoped>
@@ -52,8 +52,7 @@ nav {
 }
 i {
     margin-right: 10px;
-}
-button {
+}a {
     background: #4799eb;
     font-size: 24px;
     padding: 10px 20px;

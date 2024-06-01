@@ -4,7 +4,7 @@ import { GamesCategory } from "../api.js";
 import { onBeforeMount, ref } from "vue";
 let games = ref();
 onBeforeMount(async () => {
-    games.value = await GamesCategory("fantasy");
+    games.value = await GamesCategory("strategy");
 });
 </script>
 

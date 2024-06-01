@@ -5,7 +5,7 @@ import Royale from "../views/Royale.vue";
 import Rpg from "../views/Rpg.vue";
 import Shooter from "../views/Shooter.vue";
 import Strategy from "../views/Strategy.vue";
-
+import Detail from "../views/Detail.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -38,6 +38,11 @@ const router = createRouter({
       path: "/strategy",
       name: "strategy",
       component: Strategy,
+    },
+    {
+      path: "/detail/:id",
+      name: "detail",
+      component: Detail,
     },
   ]
 })
